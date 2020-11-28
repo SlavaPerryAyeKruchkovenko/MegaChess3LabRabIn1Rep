@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MegaCheess
 {
-	class CheesDataBase
+	class CheessDataBase
 	{
 
 	}

@@ -39,7 +39,9 @@ namespace MegaCheess
         }
         private static void ChangeColorUp()
 		{
-            if(MenuDataBase.ContinueSpaceColor==MenuDataBase.HighlightColor)
+            Console.Beep(130, 250);
+
+            if (MenuDataBase.ContinueSpaceColor==MenuDataBase.HighlightColor)
 			{
                 MenuDataBase.NewGameSpaceColor = MenuDataBase.HighlightColor;
                 MenuDataBase.ContinueSpaceColor = MenuDataBase.StandartColor;
@@ -57,6 +59,8 @@ namespace MegaCheess
         }
         private static void ChangeColorDown()
 		{
+            Console.Beep(100, 250);
+
             if (MenuDataBase.NewGameSpaceColor == MenuDataBase.ContinueSpaceColor && MenuDataBase.ScoreSpaceColor == MenuDataBase.ExitSpaceColor)
                 MenuDataBase.NewGameSpaceColor = MenuDataBase.HighlightColor;
 
@@ -78,6 +82,8 @@ namespace MegaCheess
         }
         private static bool ChangeGameSpace()
 		{
+            Console.Beep(200, 250);
+
             if (MenuDataBase.NewGameSpaceColor == MenuDataBase.HighlightColor)
 			{
                 Printer.ConsoleClear();

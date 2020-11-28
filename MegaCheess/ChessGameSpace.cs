@@ -9,6 +9,7 @@ namespace MegaCheess
 		public static void CheesLogic(bool isNewGame)
 		{
 			Printer.PrintBoard(isNewGame);
+			
 		}
 	}
 }
